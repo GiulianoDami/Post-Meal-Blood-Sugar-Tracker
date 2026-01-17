@@ -1,0 +1,37 @@
+{
+    "language": "Python",
+    "dependency_file": "requirements.txt",
+    "dependencies": ["pandas", "numpy", "matplotlib", "jsonschema"],
+    "files": [
+        {
+            "path": "src/blood_sugar_tracker.py",
+            "description": "Main module for tracking and analyzing blood sugar levels",
+            "exports": ["class BloodSugarTracker", "method add_meal()", "method record_blood_sugar()", "method generate_report()"]
+        },
+        {
+            "path": "src/data_models.py",
+            "description": "Data structures for meal and genetic information",
+            "exports": ["class MealData", "class GeneticData"]
+        },
+        {
+            "path": "src/analysis.py",
+            "description": "Module for analyzing blood sugar trends and generating reports",
+            "exports": ["class AnalysisEngine", "method analyze_trends()", "method generate_report()"]
+        },
+        {
+            "path": "src/recommendation_engine.py",
+            "description": "Logic for providing dietary recommendations based on data",
+            "exports": ["class RecommendationEngine", "method get_recommendations()"]
+        },
+        {
+            "path": "src/io_handler.py",
+            "description": "Handles loading and exporting of data and reports",
+            "exports": ["method load_genetic_data()", "method export_results()"]
+        },
+        {
+            "path": "src/__init__.py",
+            "description": "Package initialization",
+            "exports": ["BloodSugarTracker", "MealData", "GeneticData"]
+        }
+    ]
+}
